@@ -1,0 +1,24 @@
+.cardContainer {
+    width: 100%;
+    height: fit-content;
+    background-image: url("https://www.edunify.in/images/teamPageBg.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+  }
+
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 40px;
+    gap: 50px 0px;
+  }
+
+
+  @media screen and (max-width: 768px){
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+  }
